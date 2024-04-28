@@ -131,6 +131,83 @@
                 </div>
             </div>
         </section>
+
+        <section class="flex w-full">
+            <img src="/img/pregunta_educacion.jpg" alt="Educación">
+            <div class="bg-gray-50 w-full flex flex-col justify-evenly py-52 items-center">
+                <p class="text-2xl text-center">Queremos conversar contigo, <br><span class="text-orange-400 font-bold">déjanos tus datos y te contactaremos</span></p>
+                <span class="text-sm font-bold">Datos del padre de familia</span>
+                <form action="" class="flex flex-col gap-6">
+                    <div class="flex gap-4">
+                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text" placeholder="NOMBRES">
+                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text" placeholder="APELLIDOS">
+                    </div>
+                    <div class="flex gap-4">
+                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none" name="tipo_documento" id="">
+                            <option value="TIPO DE DOCUMENTO">TIPO DE DOCUMENTO</option>
+                            <option value="DNI" selected>DNI</option>
+                            <option value="CARNÉ DE EXTRANJERÍA">CARNÉ DE EXTRANJERÍA</option>
+                            <option value="PASAPORTE">PASAPORTE</option>
+                        </select>
+                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text" placeholder="NÚMERO DE DOCUMENTO">
+                    </div>
+                    <div class="flex gap-4">
+                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="email" placeholder="CORREO ELECTRÓNICO">
+                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text" placeholder="TELÉFONO">
+                    </div>
+                    <div class="flex gap-4">
+                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none" name="provincia" id="">
+                            <option value="PROVINCIA">PROVINCIA</option>
+                            <option value="AREQUIPA">AREQUIPA</option>
+                            <option value="CHICLAYO">CHICLAYO</option>
+                            <option value="CHIMBOTE">CHIMBOTE</option>
+                            <option value="CHINCHA">CHINCHA</option>
+                            <option value="CUSCO">CUSCO</option>
+                            <option value="HUACHO">HUACHO</option>
+                            <option value="HUANCAYO">HUANCAYO</option>
+                            <option value="HUÁNUCO">HUÁNUCO</option>
+                            <option value="ICA">ICA</option>
+                            <option value="JULIACA">JULIACA</option>
+                            <option value="LIMA">LIMA</option>
+                            <option value="MOQUEGUA">MOQUEGUA</option>
+                            <option value="PIURA">PIURA</option>
+                            <option value="PUCALLPA">PUCALLPA</option>
+                            <option value="TACNA">TACNA</option>
+                            <option value="TARAPOTO">TARAPOTO</option>
+                            <option value="TRUJILLO">TRUJILLO</option>
+                        </select>
+                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none" name="grado" id="">
+                            <option value="GRADO">GRADO</option>
+                            <option value="BEGINNERS (3 AÑOS)">BEGINNERS (3 AÑOS)</option>
+                            <option value="PRE-KINDER (4 AÑOS)">PRE-KINDER (4 AÑOS)</option>
+                            <option value="KINDER (5 AÑOS)">KINDER (5 AÑOS)</option>
+                            <option value="1° PRIMARIA">1° PRIMARIA</option>
+                            <option value="2° PRIMARIA">2° PRIMARIA</option>
+                            <option value="3° PRIMARIA">3° PRIMARIA</option>
+                            <option value="4° PRIMARIA">4° PRIMARIA</option>
+                            <option value="5° PRIMARIA">5° PRIMARIA</option>
+                            <option value="6° PRIMARIA">6° PRIMARIA</option>
+                            <option value="1° SECUNDARIA">1° SECUNDARIA</option>
+                            <option value="2° SECUNDARIA">2° SECUNDARIA</option>
+                            <option value="3° SECUNDARIA">3° SECUNDARIA</option>
+                            <option value="4° SECUNDARIA">4° SECUNDARIA</option>
+                            <option value="5° SECUNDARIA">5° SECUNDARIA</option>
+                        </select>
+                    </div>
+                </form>
+                <section class="w-920 text-sm flex flex-col gap-3">
+                    <div>
+                        <input type="checkbox" name="politica" id="">
+                        <span>Acepto las <a href="#" class="text-sky-700 underline">politicas de privacidad</a></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="adicional" id="">
+                        <span>Acepto recibir información útil sobre eventos y programas de Innova Schools para <a href="#" class="text-sky-700 underline">finalidades adicionales</a>. Puedo darme de baja en cualquier momento.</span>
+                    </div>
+                </section>
+                <button class="bg-sky-700 text-white px-10 py-2.5 rounded-3xl hover:bg-sky-600 duration-300">Enviar mis datos</button>
+            </div>
+        </section>
     </main>
     <script src="/js/index.js"></script>
 </body>
