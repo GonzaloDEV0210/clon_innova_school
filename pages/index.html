@@ -16,62 +16,65 @@
 
 <body class="font-montserrat">
     <section class="fixed z-20 w-full">
-        <div class="bg-slate-600 py-3 px-80 text-right">
-            <div class="inline-flex gap-4">
-                <button class="text-gray-200 text-xs px-11 py-1 border border-transparent hover:border hover:border-orange-400 rounded-sm duration-500 hover:text-orange-400">¡Refiere una familia y gana!</button>
-                <button class="text-gray-200 text-xs px-11 py-1 border border-transparent hover:border hover:border-orange-400 rounded-sm duration-500 hover:text-orange-400 flex justify-center items-center gap-2"><i class="fa-solid fa-user-group"></i>Innova Family</button>
+        <div class="py-3 text-right bg-slate-600">
+            <div class="2xl:w-1400 mx-auto xl:w-1230">
+                <div class="inline-flex gap-4">
+                    <button class="text-gray-200 text-xs px-11 py-1 border border-transparent hover:border hover:border-orange-400 rounded-sm duration-500 hover:text-orange-400">¡Refiere una familia y gana!</button>
+                    <button class="text-gray-200 text-xs px-11 py-1 border border-transparent hover:border hover:border-orange-400 rounded-sm duration-500 hover:text-orange-400 flex justify-center items-center gap-2"><i class="fa-solid fa-user-group"></i>Innova Family</button>
+                </div>
             </div>
         </div>
-        <header class="px-60 flex py-5 justify-between items-center z-10 w-full bg-white" id="header">
-            <img src="/img/logo.svg" alt="logo" class="w-52">
-            <ul class="flex gap-7 text-slate-600 text-sm">
-                <li class="hover:cursor-pointer duration-300 relative h-11 flex items-center gap-2">
-                    <span id="propuesta" class="font-semibold duration-300">Propuestas Educativas</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <ul id="lista_propuesta"
-                        class="absolute bg-white w-full flex flex-col top-full h-0 overflow-hidden duration-300">
-                        <!-- h-36 -->
-                        <li class="h-7 text-xs flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Nuestros Pilares</li>
-                        <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold relative">
-                            <span id="metodologia">Nuestra Metodología</span>
-                            <i class="fa-solid fa-chevron-right text-8"></i>
-                            <ul id="lista_metodologia" class="absolute bg-white left-full w-3/4 flex items-center gap-1 duration-200">
-                                <li id="presencial" class="h-7 flex items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Presencial</li>
+        <header class="z-10 w-full bg-white flex justify-center" id="header">
+            <div class="flex py-5 justify-between items-center 2xl:w-1400 xl:w-1260">
+                <img src="/img/logo.svg" alt="logo" class="w-52">
+                <ul class="flex gap-7 text-slate-600 text-sm">
+                    <li class="hover:cursor-pointer duration-300 relative h-11 flex items-center gap-2">
+                        <span id="propuesta" class="font-semibold duration-300">Propuestas Educativas</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul id="lista_propuesta"
+                            class="absolute bg-white w-full flex flex-col top-full h-0 overflow-hidden duration-300">
+                            <!-- h-36 -->
+                            <li class="h-7 text-xs flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Nuestros Pilares</li>
+                            <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold relative">
+                                <span id="metodologia">Nuestra Metodología</span>
                                 <i class="fa-solid fa-chevron-right text-8"></i>
-                                <ul id="lista_presencial" class="absolute left-full top-0 w-0 overflow-hidden bg-white">
-                                    <li class="h-7 flex items-center pl-3">Inicial</li>
-                                    <li class="h-7 flex items-center pl-3 border-t">Primaria</li>
-                                    <li class="h-7 flex items-center pl-3 border-t">Secundaria</li>
+                                <ul id="lista_metodologia" class="absolute bg-white left-full w-3/4 flex items-center gap-1 duration-200">
+                                    <li id="presencial" class="h-7 flex items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Presencial</li>
+                                    <i class="fa-solid fa-chevron-right text-8"></i>
+                                    <ul id="lista_presencial" class="absolute left-full top-0 w-0 overflow-hidden bg-white">
+                                        <li class="h-7 flex items-center pl-3">Inicial</li>
+                                        <li class="h-7 flex items-center pl-3 border-t">Primaria</li>
+                                        <li class="h-7 flex items-center pl-3 border-t">Secundaria</li>
+                                    </ul>
                                 </ul>
-                            </ul>
-                        </li>
-                        <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Charlas digitales</li>
-                        <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Visita guiada virtual</li>
-                        <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Perfil de salida</li>
-                    </ul>
-                </li>
-                <li class="hover:cursor-pointer font-semibold duration-300 h-11 flex items-center gap-2">Sedes</li>
-                <li class="hover:cursor-pointer duration-300 h-11 flex items-center gap-2 relative">
-                    <span id="servicos" class="font-semibold duration-300">Nuevos Servicios</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <ul id="lista_servicios"
-                        class="absolute top-full h-0 flex items-center bg-white w-full pl-3 overflow-hidden duration-300">
-                        <!-- h-12 -->
-                        <li class="h-7 text-xs flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Star Time</li>
-                    </ul>
-                </li>
-                <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Blog</li>
-                <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Visita Guiada</li>
-                <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Comunidad de egresados</li>
-            </ul>
-            <button class="text-sm bg-sky-600 text-white py-4 px-6 rounded-3xl hover:bg-orange-400 duration-500">Lista
-                de Espera 2025</button>
+                            </li>
+                            <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Charlas digitales</li>
+                            <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Visita guiada virtual</li>
+                            <li class="h-7 text-xs border-t flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Perfil de salida</li>
+                        </ul>
+                    </li>
+                    <li class="hover:cursor-pointer font-semibold duration-300 h-11 flex items-center gap-2">Sedes</li>
+                    <li class="hover:cursor-pointer duration-300 h-11 flex items-center gap-2 relative">
+                        <span id="servicos" class="font-semibold duration-300">Nuevos Servicios</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul id="lista_servicios"
+                            class="absolute top-full h-0 flex items-center bg-white w-full pl-3 overflow-hidden duration-300">
+                            <!-- h-12 -->
+                            <li class="h-7 text-xs flex gap-1 items-center pl-3 hover:text-orange-500 duration-300 hover:font-semibold">Star Time</li>
+                        </ul>
+                    </li>
+                    <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Blog</li>
+                    <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Visita Guiada</li>
+                    <li class="hover:cursor-pointerfont-semibold duration-300 h-11 flex items-center gap-2">Comunidad de egresados</li>
+                </ul>
+                <button class="text-sm bg-sky-600 text-white py-4 px-6 rounded-3xl hover:bg-orange-400 duration-500">Lista de Espera 2025</button>
+            </div>
         </header>
     </section>
     <main class="pt-36">
         <section class="h-950 flex">
             <section class="bg-cyan-700 w-1/2 h-full relative">
-                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="950" viewBox="0 0 649 800" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="2xl:w-770 2xl:h-940" viewBox="0 0 649 800" fill="none">
                     <path d="M55.6763 0H-144V200L55.6763 405.714L255.353 194.286L55.6763 0Z" fill="#26627E"></path>
                     <path d="M649 202.857V2.85714L449.324 2.85713L44.2662 405.714L255.353 605.714L649 202.857Z"
                         fill="#26627E"></path>
@@ -106,14 +109,13 @@
             </section>
         </section>
 
-        <section class="px-72 -mt-4">
-            <div class="px-28 flex items-center justify-between">
+        <section class="w-1400 xl:w-1260 -mt-4 mx-auto">
+            <div class="w-1100 mx-auto flex items-center justify-between">
                 <img src="/img/fernandito_01.png" alt="" class="w-56 z-10">
-                <p class="w-2/3 text-2xl"><span class="font-bold text-orange-500">Conoce nuestros 4 pilares
-                        educativos</span> para potenciar las habilidades de tus hijos</p>
+                <p class="w-2/3 text-2xl"><span class="font-bold text-orange-500">Conoce nuestros 4 pilares educativos</span> para potenciar las habilidades de tus hijos</p>
             </div>
-            <div class="flex gap-5 flex-wrap justify-between px-16">
-                <div class="bg-sky-700 text-white w-48.8% p-14 h-450 rounded-3xl flex flex-col gap-3">
+            <div class="flex gap-5 flex-wrap justify-between w-1230 mx-auto">
+                <div class="bg-sky-700 text-white w-600 p-14 h-450 rounded-3xl flex flex-col gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="95" height="94" viewBox="0 0 95 94" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M37.1021 35.7V42C37.1021 47.799 41.8032 52.5 47.6021 52.5001C53.4011 52.5001 58.1021 47.799 58.1021 42V35.7001L37.1021 35.7ZM47.6021 55.6501C55.1408 55.6501 61.2521 49.5387 61.2521 42V33.5544C61.2521 32.9997 60.8025 32.5501 60.2478 32.5501L34.9565 32.55C34.4018 32.55 33.9521 32.9997 33.9521 33.5544V42C33.9521 49.5387 40.0635 55.65 47.6021 55.6501Z"
@@ -142,7 +144,7 @@
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
-                <div class="bg-green-500 text-white w-48.8% p-14 h-450 rounded-3xl flex flex-col gap-3">
+                <div class="bg-green-500 text-white w-600 p-14 h-450 rounded-3xl flex flex-col gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="82" height="70" viewBox="0 0 82 70" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M41.8776 1.29216C44.1653 0.588233 46.6547 1.13424 48.4378 2.73107L79.6548 30.6866C81.1005 31.9813 81.9267 33.8302 81.9267 35.7709V51.6445C81.9267 54.6113 80.01 57.2383 77.1848 58.1439L42.9324 69.1222C40.4977 69.9025 37.8311 69.2567 36.0233 67.4489L2.57604 34.0017C-0.215882 31.2097 0.319172 26.8039 3.1548 24.6054L2.65336 24.104C0.253275 21.7039 -0.0774074 17.9271 1.86905 15.1465C2.7618 13.8711 4.05449 12.93 5.54241 12.4722L41.8776 1.29216ZM5.80168 25.0249L6.2075 26.5467C3.88223 27.1668 3.10176 30.0726 4.80343 31.7743L38.2506 65.2215C39.2241 66.1949 40.66 66.5427 41.971 66.1225L76.2234 55.1442C77.7447 54.6566 78.7767 53.242 78.7767 51.6445V35.7709C78.7767 34.7259 78.3318 33.7303 77.5534 33.0332L46.3364 5.07766C45.3762 4.21783 44.0358 3.92383 42.8039 4.30287L6.46879 15.4829C5.65091 15.7346 4.94036 16.2519 4.44963 16.9529C3.37971 18.4813 3.56148 20.5573 4.88074 21.8766L6.91538 23.9112L5.80168 25.0249Z"
@@ -169,7 +171,7 @@
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
-                <div class="bg-orange-500 text-white w-48.8% p-14 h-450 rounded-3xl flex flex-col gap-3">
+                <div class="bg-orange-500 text-white w-600 p-14 h-450 rounded-3xl flex flex-col gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="79" height="62" viewBox="0 0 79 62" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M69.7689 17.432L39.6788 4.10548C38.2765 3.48444 36.6772 3.48444 35.2749 4.10547L5.18475 17.432C3.52382 18.1676 3.4431 20.4946 5.04909 21.3436L34.9358 37.1415C36.5256 37.9819 38.4281 37.9819 40.0179 37.1415L69.9046 21.3436C71.5106 20.4946 71.4299 18.1676 69.7689 17.432ZM40.9999 1.12244C38.7563 0.128782 36.1974 0.128783 33.9538 1.12244L3.86361 14.449C-0.288741 16.288 -0.490513 22.1056 3.52445 24.2279L33.4111 40.0259C35.9549 41.3705 38.9988 41.3705 41.5426 40.0259L71.4293 24.2279C75.4442 22.1056 75.2424 16.288 71.0901 14.449L40.9999 1.12244Z"
@@ -194,7 +196,7 @@
                         <i class="fa-solid fa-caret-right"></i>
                     </a>
                 </div>
-                <div class="bg-yellow-500 text-white w-48.8% p-14 h-450 rounded-3xl flex flex-col gap-3">
+                <div class="bg-yellow-500 text-white w-600 p-14 h-450 rounded-3xl flex flex-col gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="67" height="63" viewBox="0 0 67 63" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M40.2181 18.4099L34.9633 3.94332C34.6283 3.02131 33.3244 3.02129 32.9894 3.94332L27.7346 18.4099C26.7105 21.2292 24.0759 23.1434 21.078 23.2462L5.69566 23.7734C4.71529 23.807 4.31232 25.0472 5.08572 25.6506L17.2204 35.1187C19.5853 36.9639 20.5916 40.0611 19.763 42.944L15.511 57.7364C15.24 58.6792 16.295 59.4456 17.1079 58.8966L29.8624 50.2816C32.3481 48.6026 35.6046 48.6026 38.0903 50.2816L50.8448 58.8966C51.6577 59.4456 52.7127 58.6792 52.4417 57.7364L48.1897 42.944C47.3611 40.0611 48.3674 36.9639 50.7323 35.1187L62.867 25.6506C63.6404 25.0472 63.2374 23.807 62.257 23.7734L46.8747 23.2462C43.8768 23.1434 41.2422 21.2292 40.2181 18.4099ZM37.924 2.86786C36.5843 -0.820216 31.3684 -0.820208 30.0287 2.86787L24.7739 17.3344C24.1887 18.9455 22.6832 20.0393 20.9701 20.098L5.58775 20.6253C1.66621 20.7597 0.0543994 25.7203 3.14799 28.1341L15.2827 37.6022C16.634 38.6566 17.2091 40.4264 16.7356 42.0738L12.4836 56.8662C11.3996 60.6373 15.6194 63.7032 18.871 61.5069L31.6255 52.8919C33.0459 51.9325 34.9068 51.9325 36.3272 52.8919L49.0817 61.5069C52.3333 63.7032 56.5531 60.6373 55.4691 56.8662L51.2171 42.0738C50.7436 40.4264 51.3187 38.6566 52.67 37.6022L64.8047 28.1341C67.8983 25.7203 66.2865 20.7597 62.3649 20.6253L46.9826 20.098C45.2695 20.0393 43.764 18.9455 43.1788 17.3344L37.924 2.86786Z"
@@ -223,7 +225,7 @@
             </div>
         </section>
 
-        <section class="px-72 h-780 flex flex-col justify-evenly">
+        <section class="w-1300 xl:w-1260 mx-auto h-780 flex flex-col justify-evenly">
             <h2 class="text-center text-2xl mt-16">Conoce nuestra metodología <span class="font-bold text-blue-800">por
                     niveles educativos</span></h2>
             <div class="flex justify-around">
@@ -254,38 +256,37 @@
             </div>
         </section>
 
-        <section class="flex w-full">
+        <section class="flex w-full xl:w-full">
             <img src="/img/pregunta_educacion.jpg" alt="Educación">
             <div class="bg-gray-50 w-full flex flex-col justify-evenly py-52 items-center">
-                <p class="text-2xl text-center">Queremos conversar contigo, <br><span
-                        class="text-orange-400 font-bold">déjanos tus datos y te contactaremos</span></p>
+                <p class="text-2xl text-center">Queremos conversar contigo, <br><span class="text-orange-400 font-bold">déjanos tus datos y te contactaremos</span></p>
                 <span class="text-sm font-bold">Datos del padre de familia</span>
                 <form action="" class="flex flex-col gap-6">
                     <div class="flex gap-4">
-                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text"
+                        <input class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" type="text"
                             placeholder="NOMBRES">
-                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text"
+                        <input class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" type="text"
                             placeholder="APELLIDOS">
                     </div>
                     <div class="flex gap-4">
-                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none"
+                        <select class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none"
                             name="tipo_documento" id="">
                             <option value="TIPO DE DOCUMENTO">TIPO DE DOCUMENTO</option>
                             <option value="DNI" selected>DNI</option>
                             <option value="CARNÉ DE EXTRANJERÍA">CARNÉ DE EXTRANJERÍA</option>
                             <option value="PASAPORTE">PASAPORTE</option>
                         </select>
-                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text"
+                        <input class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" type="text"
                             placeholder="NÚMERO DE DOCUMENTO">
                     </div>
                     <div class="flex gap-4">
-                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="email"
+                        <input class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" type="email"
                             placeholder="CORREO ELECTRÓNICO">
-                        <input class="w-450 border border-black px-3 py-2 rounded-lg outline-none" type="text"
+                        <input class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" type="text"
                             placeholder="TELÉFONO">
                     </div>
                     <div class="flex gap-4">
-                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none" name="provincia"
+                        <select class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" name="provincia"
                             id="">
                             <option value="PROVINCIA">PROVINCIA</option>
                             <option value="AREQUIPA">AREQUIPA</option>
@@ -306,7 +307,7 @@
                             <option value="TARAPOTO">TARAPOTO</option>
                             <option value="TRUJILLO">TRUJILLO</option>
                         </select>
-                        <select class="w-450 border border-black px-3 py-2 rounded-lg outline-none" name="grado" id="">
+                        <select class="2xl:w-450 xl:w-250 border border-black px-3 py-2 rounded-lg outline-none" name="grado" id="">
                             <option value="GRADO">GRADO</option>
                             <option value="BEGINNERS (3 AÑOS)">BEGINNERS (3 AÑOS)</option>
                             <option value="PRE-KINDER (4 AÑOS)">PRE-KINDER (4 AÑOS)</option>
@@ -325,16 +326,14 @@
                         </select>
                     </div>
                 </form>
-                <section class="w-920 text-sm flex flex-col gap-3">
+                <section class="2xl:w-920 xl:w-450 text-sm flex flex-col gap-3">
                     <div>
                         <input type="checkbox" name="politica" id="">
                         <span>Acepto las <a href="#" class="text-sky-700 underline">politicas de privacidad</a></span>
                     </div>
                     <div>
                         <input type="checkbox" name="adicional" id="">
-                        <span>Acepto recibir información útil sobre eventos y programas de Innova Schools para <a
-                                href="#" class="text-sky-700 underline">finalidades adicionales</a>. Puedo darme de baja
-                            en cualquier momento.</span>
+                        <span>Acepto recibir información útil sobre eventos y programas de Innova Schools para <a href="#" class="text-sky-700 underline">finalidades adicionales</a>.Puedo darme de baja en cualquier momento.</span>
                     </div>
                 </section>
                 <button class="bg-sky-700 text-white px-10 py-2.5 rounded-3xl hover:bg-sky-600 duration-300">Enviar mis
@@ -342,41 +341,41 @@
             </div>
         </section>
     </main>
-    <footer class="bg-sky-900 text-white h-450 flex flex-col gap-12 justify-center items-center px-72">
-        <section class="flex gap-24">
-            <div class="w-350">
-                <p class="text-2xl">Ven y pregunta por nuestra <span class="font-bold">Educación 360°</span></p>
-            </div>
-            <div class="flex flex-col w-60 gap-5">
-                <a href="#" class="underline text-sm">información pública en el Portal del Mercado de Valores</a>
-                <img src="/img/libro-de-reclamaciones.jpg" alt="Libro de reclamaciones" class="w-36">
-            </div>
-            <div class="flex flex-col gap-4 w-48">
-                <a href="#" class="underline text-sm">Miembros del directorio</a>
-                <a href="#" class="underline text-sm">Código de ética</a>
-                <a href="#" class="underline text-sm">Social Bond Framework</a>
-            </div>
-            <div class="flex flex-col gap-4 w-48">
-                <a href="#" class="underline text-sm">Preguntas frecuentes</a>
-                <a href="#" class="underline text-sm">Trabaja con nosotros</a>
-                <button
-                    class="bg-white text-sky-900 py-2 px-6 rounded-3xl hover:bg-sky-900 hover:text-white hover:border hover:border-white duration-300"><i
-                        class="fa-solid fa-phone"></i> (01) 730-4555</button>
-            </div>
-        </section>
-        <div class="h-1 w-full bg-gray-400"></div>
-        <section class="w-full flex justify-between">
-            <div class="flex gap-14">
-                <a href="#" class="underline text-xs">Políticas de Privacidad</a>
-                <a href="#" class="underline text-xs">Términos y condiciones</a>
-                <a href="#" class="underline text-xs">Información del servicio</a>
-            </div>
-            <div class="flex gap-5">
-                <a href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube text-xl"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
-            </div>
-        </section>
+    <footer class="bg-sky-900 text-white h-450 flex justify-center">
+        <div class="flex flex-col gap-12 justify-center items-center xl:w-1230">
+            <section class="flex gap-24">
+                <div class="w-350">
+                    <p class="text-2xl">Ven y pregunta por nuestra <span class="font-bold">Educación 360°</span></p>
+                </div>
+                <div class="flex flex-col w-52 gap-5">
+                    <a href="#" class="underline text-sm">información pública en el Portal del Mercado de Valores</a>
+                    <img src="/img/libro-de-reclamaciones.jpg" alt="Libro de reclamaciones" class="w-36">
+                </div>
+                <div class="flex flex-col gap-4 w-48">
+                    <a href="#" class="underline text-sm">Miembros del directorio</a>
+                    <a href="#" class="underline text-sm">Código de ética</a>
+                    <a href="#" class="underline text-sm">Social Bond Framework</a>
+                </div>
+                <div class="flex flex-col gap-4 w-48">
+                    <a href="#" class="underline text-sm">Preguntas frecuentes</a>
+                    <a href="#" class="underline text-sm">Trabaja con nosotros</a>
+                    <button class="bg-white text-sky-900 py-2 px-6 rounded-3xl hover:bg-sky-900 hover:text-white hover:border hover:border-white duration-300"><i class="fa-solid fa-phone"></i> (01) 730-4555</button>
+                </div>
+            </section>
+            <div class="h-1 w-full bg-gray-400"></div>
+            <section class="w-full flex justify-between">
+                <div class="flex gap-14">
+                    <a href="#" class="underline text-xs">Políticas de Privacidad</a>
+                    <a href="#" class="underline text-xs">Términos y condiciones</a>
+                    <a href="#" class="underline text-xs">Información del servicio</a>
+                </div>
+                <div class="flex gap-5">
+                    <a href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube text-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+                </div>
+            </section>
+        </div>
     </footer>
     <a href="#" class="fixed bottom-2 right-3">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100"
